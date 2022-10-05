@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Set the When Needed date to a week from today.</description>
+        <field/>
+        <global>false</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>NeedIt Set When required</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    if(g_form.isNewRecord()){
+var today = new GlideDateTime(); 
+today.addDaysUTC(2);
+//var nextWeek = today.addDays(7);
+alert('hi');
+//alert(today.getDisplayValue());
+//alert(dt.getDisplayValue());
+ //g_form.setValue('short_description',dt.getDisplayValue());
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-04 16:50:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>07b9f05a2fd65110039955f62799b6ce</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>NeedIt Set When required</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_07b9f05a2fd65110039955f62799b6ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-05 08:23:49</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>b6f01ad6db36481052dd2f17d4961991</instance_id>
+        <instance_name>dev99915</instance_name>
+        <name>sys_script_client_07b9f05a2fd65110039955f62799b6ce</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Set the When Needed date to a week from today.&lt;/description&gt;&lt;field/&gt;&lt;global&gt;false&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;NeedIt Set When required&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    if(g_form.isNewRecord()){
+var today = new GlideDateTime(); 
+today.addDaysUTC(2);
+//var nextWeek = today.addDays(7);
+alert('hi');
+//alert(today.getDisplayValue());
+//alert(dt.getDisplayValue());
+ //g_form.setValue('short_description',dt.getDisplayValue());
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-04 16:50:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;07b9f05a2fd65110039955f62799b6ce&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;NeedIt Set When required&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_07b9f05a2fd65110039955f62799b6ce&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-05 08:23:49&lt;/sys_updated_on&gt;&lt;table&gt;x_58872_needit_needit&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1891235459</payload_hash>
+        <record_name>NeedIt Set When required</record_name>
+        <reverted_from/>
+        <source>5c5c3bf32f865110039955f62799b6f6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-05 08:23:49</sys_created_on>
+        <sys_id>28b758a62f121110039955f62799b63d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183a73e6d680000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-05 08:23:49</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>acb758a63c12111023719234267d2c3c</update_guid>
+        <update_guid_history>acb758a63c12111023719234267d2c3c:-1891235459,6c698d1ecf1a5110f412e00bc2ee6c9a:-553754662,1639c91e8a1a51100446fb4b81657462:974981114,d409891e971a511029379c55552fde94:-21688358,fdb8cddacc1a5110db765f34047fda9b:-1111935985,e758011e261a511059c213c248068add:1044571563,c2488dda071a51108ec3ab4cf1f2bea3:-414087360,d538c9da721a5110c4b4c13066b22ba2:1452347168,9618c59abe1a51107977e1a90deeb246:-1082010816,4be705da671a5110aef2f00d15b317ee:-414087360,71d7c1da251a5110a57ce29c518996f5:-1554291043,06a7099a2c1a511094a679c48c85e24a:1712065661,c0d6819acf1a5110f36a7cca64bc5dc4:-1785872212,0ea6495ac71a51103279cccdce8a1a47:-1819223503,e4e5451a231a51100be93c467f82aac3:-1411042086,80c5c51ada1a51105ca414cc8dc2e559:-66248394,c094451a9e1a51104ae16959e5cb78be:968987246,e7534996b91a5110908d5482bdb4610d:-459816591,e0238d96561a5110e5440a77974dce2e:-404533250,c6d2c996531a511030e45116d52080fb:1472428362,35a24996611a5110b9ebf87b495af705:315044321,491201dab7d65110bd934d7074a04ad3:-1945736021,a6f14152471a51102eba168ed3d62f04:-2117295534</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-05 08:40:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>0118c233803c4a6080d28980345b3049</sys_id>
+        <sys_metadata>07b9f05a2fd65110039955f62799b6ce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIt Set When required</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="NeedIt">071e2c802f5a5110039955f62799b616</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_client_07b9f05a2fd65110039955f62799b6ce</sys_update_name>
+        <sys_update_version display_value="sys_script_client_07b9f05a2fd65110039955f62799b6ce">28b758a62f121110039955f62799b63d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-05 08:40:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
