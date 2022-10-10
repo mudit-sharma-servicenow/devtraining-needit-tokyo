@@ -16,10 +16,12 @@
 
   // Modified the if to return if the newValue == oldValue to avoid
   // unecessary trips to the server
-  if ((isLoading && !g_form.isNewRecord()) || newValue === '' || newValue == oldValue) {
-	  	console.log('PVM-2');
+  if ((isLoading && !g_form.isNewRecord()) || (!isLoading && (newValue === '' || newValue == oldValue))) {
+	  console.log('EXITING');
     return;
   }
+	
+	console.log('PVM-2');
 
   // Instantiate the GetEmailAddress Script Include 
   var getEmailAddr = new GlideAjax('GetEmailAddress');
@@ -30,6 +32,8 @@
   // Send the request to the server
   getEmailAddr.getXML(populateEmailField);
 
+	console.log(getEmailAddr);
+	console.log('PVM-3');
 
   // When the response is back from the server
   function populateEmailField(response){
@@ -46,7 +50,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>781629ff2f9a1510039955f62799b69e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>NeedIt Populate Email Field</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -54,7 +58,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_client_781629ff2f9a1510039955f62799b69e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-10-09 12:00:30</sys_updated_on>
+        <sys_updated_on>2022-10-09 17:11:15</sys_updated_on>
         <table>x_58872_needit_needit</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
